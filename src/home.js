@@ -1,0 +1,43 @@
+
+export function makeHomePage() {
+    let div = document.createElement("div");
+
+    let title = document.createElement("h1");
+    title.textContent = "nyurga's cat cafe";
+    div.appendChild(title);
+
+    let quoteDiv = document.createElement("div");
+    let quote = document.createElement("p");
+    quote.textContent = "mrrp mrrp meow";
+    let author = document.createElement("p");
+    author.textContent = "- nyurga, head chef";
+    quoteDiv.appendChild(quote);
+    quoteDiv.appendChild(author);
+    div.appendChild(quoteDiv);
+
+    let hoursDiv = document.createElement("div");
+    let hoursHeader = document.createElement("h2");
+    hoursHeader.textContent = 'hours';
+    hoursDiv.appendChild(hoursHeader);
+
+    let hoursList = document.createElement("ul");
+    let hours = ["24/7 open if you bring cat snacks"];
+    for (const s of hours) {
+        let listItem = document.createElement("li");
+        listItem.textContent = s;
+        hoursList.appendChild(listItem);
+    }
+    hoursDiv.appendChild(hoursList);
+    div.appendChild(hoursDiv);
+
+    let locationDiv = document.createElement("div");
+    let locationHeader = document.createElement('h2');
+    locationHeader.textContent = 'location';
+    locationDiv.appendChild(locationHeader);
+    let location = document.createElement("p");
+    location.textContent = "nyurga's house";
+    locationDiv.appendChild(location);
+    div.appendChild(locationDiv);
+
+    return div;
+}
