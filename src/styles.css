@@ -27,8 +27,7 @@ ul {
 
 body {
     background-color: var(--base-color);
-    /* width: 100vw; */
-    /* height: 150vh; */
+    margin-bottom: 1em;
 }
 
 header {
@@ -54,7 +53,7 @@ nav {
     gap: 1em;
 }
 
-.home > img {
+.home>img {
     width: 30em;
     align-self: center;
     border: 1em solid var(--surface-color);
@@ -62,8 +61,8 @@ nav {
 }
 
 .title {
-    align-self: center;
-    font-size: 300%;
+    text-align: center;
+    font-size: 400%;
     padding: 0.5em;
 }
 
@@ -91,4 +90,19 @@ nav {
         font-size: 80%;
         align-self: end;
     }
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+    margin-block: 1em;
+}
+
+.section>h2 {
+    font-size: 250%;
+    margin-inline: 3%;
+    padding: 0.5em;
+    background-color: var(--surface-color);
 }
