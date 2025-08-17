@@ -1,3 +1,28 @@
+@import url('https://cdn.jsdelivr.net/npm/@catppuccin/palette/css/catppuccin.css');
+
+* {
+    --base-color: var(--ctp-macchiato-base);
+    --secondary-pane-color: var(--ctp-macchiato-mantle);
+    --surface-color: var(--ctp-macchiato-surface0);
+    --text-color: var(--ctp-macchiato-text);
+
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+button {
+    background-color: var(--surface-color);
+    border: none;
+    padding: 0.4em;
+    font-size: 120%;
+}
+
 body {
-    background-color: aqua;
+    background-color: var(--base-color);
+}
+
+header {
+    background-color: var(--secondary-pane-color);
+    padding: 1em;
 }
