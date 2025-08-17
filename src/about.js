@@ -1,5 +1,6 @@
 import nyurgaImg from "./images/nyurga_chef.jpg";
 import ashImg from "./images/ash.jpg";
+import nepetaImg from "./images/nepeta.jpg"
 
 function makeCard(name, position, phone, email, image) {
     let item = document.createElement("div");
@@ -28,7 +29,7 @@ function makeCard(name, position, phone, email, image) {
     return item;
 }
 
-export function makeMenuPage() {
+export function makeAboutPage() {
     let div = document.createElement("div");
     div.className = "about";
 
@@ -37,9 +38,9 @@ export function makeMenuPage() {
     header.classList = "title";
     div.appendChild(header);
 
-    div.appendChild(makeCard("nyurga","head chef", "413","nyurga@nyurgashouse.com",nyurgaImg));
-    div.appendChild(makeCard("ash","assistant chef", "620","ash@nyurgashouse.com",ashImg));
-    div.appendChild(makeCard("nepeta","waiter", "728","nepeta@nyurgashouse.com"));
+    div.appendChild(makeCard("nyurga","head chef", "413-413-4134","nyurga@nyurgashouse.com",nyurgaImg));
+    div.appendChild(makeCard("ash","assistant chef", "620-620-6206","ash@nyurgashouse.com",ashImg));
+    div.appendChild(makeCard("nepeta","waiter", "728-728-7287","nepeta@nyurgashouse.com", nepetaImg));
 
     return div;
 }

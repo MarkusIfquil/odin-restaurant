@@ -4,6 +4,7 @@
     --base-color: var(--ctp-macchiato-base);
     --secondary-pane-color: var(--ctp-macchiato-mantle);
     --surface-color: var(--ctp-macchiato-surface0);
+    --surface-lighter-color: var(--ctp-macchiato-surface2);
     --text-color: var(--ctp-macchiato-text);
 
     margin: 0;
@@ -19,6 +20,10 @@ button {
     padding: 0.5em;
     padding-inline: 0.8em;
     font-size: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
 }
 
 img {
@@ -50,6 +55,10 @@ nav {
     display: flex;
     justify-content: end;
     gap: 1em;
+}
+
+.active {
+    background-color: var(--surface-lighter-color);
 }
 
 .home {
