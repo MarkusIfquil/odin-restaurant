@@ -1,4 +1,4 @@
-import image from "./nyurga_chef.jpg";
+import image from "./images/nyurga_chef.jpg";
 
 export function makeHomePage() {
     let div = document.createElement("div");

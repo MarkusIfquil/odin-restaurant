@@ -21,6 +21,13 @@ button {
     font-size: 100%;
 }
 
+img {
+    width: 100%;
+    align-self: center;
+    border: 0.8em solid var(--surface-color);
+    border-radius: 0.5em;
+}
+
 ul {
     list-style-type: none;
 }
@@ -55,9 +62,6 @@ nav {
 
 .home>img {
     width: 30em;
-    align-self: center;
-    border: 1em solid var(--surface-color);
-    border-radius: 0.5em;
 }
 
 .title {
@@ -80,6 +84,10 @@ nav {
 
 .card>h2 {
     font-size: 200%;
+}
+
+.card>img {
+    width: 30ch;
 }
 
 .quote {
