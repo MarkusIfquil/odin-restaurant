@@ -1,5 +1,10 @@
 @import url('https://cdn.jsdelivr.net/npm/@catppuccin/palette/css/catppuccin.css');
 
+@font-face {
+    font-family: jetbrainsmono;
+    src: url("fonts/JetBrainsMonoNerdFontPropo-Regular.ttf");
+}
+
 * {
     --base-color: var(--ctp-macchiato-base);
     --secondary-pane-color: var(--ctp-macchiato-mantle);
@@ -12,6 +17,7 @@
     color: var(--text-color);
     box-sizing: border-box;
     line-height: 1.3;
+    font-family: jetbrainsmono, monospace;
 }
 
 button {
