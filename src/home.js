@@ -1,17 +1,26 @@
 import image from "./images/nyurga_chef.jpg";
 
 export function makeHomePage() {
+    let root = document.createElement("div");
     let div = document.createElement("div");
-    div.className = "home";
+    div.className = "homeGrid";
 
     let title = document.createElement("h1");
     title.textContent = "nyurga's cat cafe";
     title.className = "title";
-    div.appendChild(title);
+    root.appendChild(title);
+
+    let imgDiv = document.createElement("div");
+    imgDiv.classList = "image";
 
     let img = document.createElement("img");
     img.src = image;
-    div.appendChild(img);
+    imgDiv.appendChild(img);
+
+    div.appendChild(imgDiv);
+
+    let cards = document.createElement("div");
+    cards.classList = "cards";
 
     let quoteDiv = document.createElement("div");
     quoteDiv.classList = "card quote";
@@ -22,7 +31,7 @@ export function makeHomePage() {
     author.textContent = "- nyurga, head chef";
     quoteDiv.appendChild(quote);
     quoteDiv.appendChild(author);
-    div.appendChild(quoteDiv);
+    cards.appendChild(quoteDiv);
 
     let hoursDiv = document.createElement("div");
     hoursDiv.className = "card";
@@ -38,7 +47,7 @@ export function makeHomePage() {
         hoursList.appendChild(listItem);
     }
     hoursDiv.appendChild(hoursList);
-    div.appendChild(hoursDiv);
+    cards.appendChild(hoursDiv);
 
     let locationDiv = document.createElement("div");
     locationDiv.className = "card";
@@ -48,7 +57,10 @@ export function makeHomePage() {
     let location = document.createElement("p");
     location.textContent = "nyurga's house";
     locationDiv.appendChild(location);
-    div.appendChild(locationDiv);
+    cards.appendChild(locationDiv);
 
-    return div;
+    div.appendChild(cards);
+
+    root.appendChild(div);
+    return root;
 }
