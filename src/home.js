@@ -9,10 +9,11 @@ export function makeHomePage() {
     div.appendChild(title);
 
     let quoteDiv = document.createElement("div");
-    quoteDiv.className = "card";
+    quoteDiv.classList = "card quote";
     let quote = document.createElement("p");
-    quote.textContent = "mrrp mrrp meow";
+    quote.textContent = "mrrp mrrp meow (translation: try our catppuccin special!)";
     let author = document.createElement("p");
+    author.classList = "author";
     author.textContent = "- nyurga, head chef";
     quoteDiv.appendChild(quote);
     quoteDiv.appendChild(author);
