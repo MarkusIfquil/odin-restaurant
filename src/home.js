@@ -1,12 +1,15 @@
 
 export function makeHomePage() {
     let div = document.createElement("div");
+    div.className = "home";
 
     let title = document.createElement("h1");
     title.textContent = "nyurga's cat cafe";
+    title.className = "title";
     div.appendChild(title);
 
     let quoteDiv = document.createElement("div");
+    quoteDiv.className = "card";
     let quote = document.createElement("p");
     quote.textContent = "mrrp mrrp meow";
     let author = document.createElement("p");
@@ -16,6 +19,7 @@ export function makeHomePage() {
     div.appendChild(quoteDiv);
 
     let hoursDiv = document.createElement("div");
+    hoursDiv.className = "card";
     let hoursHeader = document.createElement("h2");
     hoursHeader.textContent = 'hours';
     hoursDiv.appendChild(hoursHeader);
@@ -31,6 +35,7 @@ export function makeHomePage() {
     div.appendChild(hoursDiv);
 
     let locationDiv = document.createElement("div");
+    locationDiv.className = "card";
     let locationHeader = document.createElement('h2');
     locationHeader.textContent = 'location';
     locationDiv.appendChild(locationHeader);
