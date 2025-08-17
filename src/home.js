@@ -31,7 +31,7 @@ export function makeHomePage() {
     hoursDiv.appendChild(hoursHeader);
 
     let hoursList = document.createElement("ul");
-    let hours = ["24/7 open if you bring cat snacks"];
+    let hours = ["weekdays 9:00 - 21:00","weekends 9:00 - 23:00","24/7 open if you bring cat snacks"];
     for (const s of hours) {
         let listItem = document.createElement("li");
         listItem.textContent = s;

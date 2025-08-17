@@ -4,7 +4,7 @@ import latteImg from "./images/latte.jpg";
 import frappeImg from "./images/frappe.jpg";
 import crepeImg from "./images/crepes.jpg";
 import puddingImg  from "./images/pudding.gif";
-import catfoodImg from "./images/catfood.jpg";
+import tiramisuImg from "./images/tiramisu.jpeg";
 
 function makeSection(title, items) {
     let section = document.createElement("div");
@@ -62,7 +62,7 @@ export function makeMenuPage() {
     let food = [
         makeItem("crepes","soft, buttery crepes with chocolate",5, crepeImg),
         makeItem("pudding","chocolate or vanilla creamy pudding in the shape of a cat", 3, puddingImg),
-        makeItem("cat snacks","NOT fit for human consumption!", 2, catfoodImg),
+        makeItem("tiramisu","layered coffee cake", 4, tiramisuImg),
     ]
 
     let foodSection = makeSection("food", food);
