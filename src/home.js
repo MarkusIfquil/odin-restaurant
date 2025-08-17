@@ -1,3 +1,4 @@
+import image from "./nyurga_chef.jpg";
 
 export function makeHomePage() {
     let div = document.createElement("div");
@@ -7,6 +8,10 @@ export function makeHomePage() {
     title.textContent = "nyurga's cat cafe";
     title.className = "title";
     div.appendChild(title);
+
+    let img = document.createElement("img");
+    img.src = image;
+    div.appendChild(img);
 
     let quoteDiv = document.createElement("div");
     quoteDiv.classList = "card quote";
